@@ -1,15 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-	  <meta charset="UTF-8" />
+
+<head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title> Davi </title>
-		<link rel="stylesheet" href="css/estilo.css">
-  </head>
-  <body>
-    <h1>__Davi Deodata Bastos dos Santos _______</h1>
-    <p>____bla bla bla bla bla bla bla</p>
-		<br>
-		<p>Assinado: Amilton Pôrto dos Santos Júnior</p>
-  </body>
+    <title> Site para meu amigo especial </title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <h1 class="titulo">Davi Deodato Bastos dos Santos</h1>
+    <p>Querido colega de quarto davi, gosto da sua companhia, porém peço encarecidamnete que vá dormir mais cedo e pare
+        de me pertubar, por favor. Já não estou aguentando mais!!!!!!!!!</p>
+    <br>
+    <p>Assinado: Amilton Pôrto dos Santos Júnior</p>
+
+    <button id="meuBotao" onclick="mostrarSurpresa()">Aperte</button>
+
+    <img id="bobGif" src="assets/bob.gif" alt="Bob GIF" style="display: none; max-width: 300px;">
+
+    <img id="confeteGif" src="assets/confete.gif" alt="Confete" style="display: none; max-width: 300px;">
+    <script>
+        function mostrarSurpresa() {
+            // Pega o botão, o gif do Bob e o gif de confete
+            const botao = document.getElementById('meuBotao');
+            const gifBob = document.getElementById('bobGif');
+            const gifConfete = document.getElementById('confeteGif');
+            botao.style.display = 'none';
+            gifBob.style.display = 'block';
+            gifBob.style.margin = '0 auto'; 
+            gifConfete.style.display = 'block';
+        }
+    </script>
+</body>
+
 </html>
